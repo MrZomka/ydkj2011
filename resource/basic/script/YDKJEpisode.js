@@ -11,6 +11,7 @@ const YDKJEpisode = class extends TalkshowContent {
             const group = svg.querySelector("g");
             group.setAttribute("transform", group.getAttribute("transform") + " translate(75,75)");
         });
+        this.LoadPrize();
     }
 
     LoadPrize() {
@@ -18,6 +19,8 @@ const YDKJEpisode = class extends TalkshowContent {
             backgroundImage: `url(${this.GetContentPath()}/prize.png)`,
             backgroundSize: `100% ${this.data.prizeFrameCount * 100}%`
         });
+        Game.wrapper.append(this.prizeImage);
+        this.PlayPrize();
     }
 
     PlayPrize() {

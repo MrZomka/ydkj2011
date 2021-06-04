@@ -2,6 +2,7 @@ const TalkshowContent = class {
     constructor(id, type) {
         this.id = id;
         this.type = type;
+        this.logger = new Logger(this);
         this.LoadData();
     }
 
@@ -13,9 +14,9 @@ const TalkshowContent = class {
         fetch(`${this.GetContentPath()}/data.json`)
             .then(r => r.json())
             .then(data => {
-                console.log("[TalkshowContent] Loaded data for %s %s", this.type, this.id);
+                this.logger.log(`Loaded data for ${this.type} ${this.id}`);
                 this.data = data;
-                console.log(this.data.fields);
+                this.logger.log(this.data.fields);
                 this.LoadResources();
             });
     }
@@ -35,7 +36,7 @@ const TalkshowContent = class {
                 f.audio = Game.audioManager.Play({
                     audio: this.GetAudioPath(f.id)
                 });
-                f.audio.on("load", () => console.log("[TalkshowContent] Loaded audio %s_%s", this.id, f.id));
+                f.audio.on("load", () => this.logger.log(`Loaded audio ${f.id}`));
             });
     }
 };
