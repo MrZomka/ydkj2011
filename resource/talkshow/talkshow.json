@@ -1,0 +1,110 @@
+{
+    "music": {
+        "shortie": {
+            "ask": [
+                2877,
+                2876,
+                2878,
+                2879,
+                2880,
+                2881
+            ],
+            "countdown": [
+                2870,
+                2871,
+                2872,
+                2873,
+                2874,
+                2875
+            ],
+            "screw": {
+                "ask": 2973,
+                "countdown": 2975
+            }
+        },
+        "postQuestion": [
+            2893,
+            2894,
+            2895,
+            2896,
+            2897,
+            2898
+        ],
+        "disOrDat": {
+            "intro": 2913,
+            "countdown": 2921,
+            "stinger": 2910,
+            "waiting": 3102
+        },
+        "jackAttack": [
+            2903,
+            2900,
+            2907,
+            2901,
+            2908,
+            2905,
+            2899,
+            2902,
+            2904,
+            2906
+        ],
+        "round": {
+            "break": 2953,
+            "jackAttack": 2909
+        },
+        "jackTheme": {
+            "intro": 2980,
+            "mainLoop": 2976,
+            "sponsor": 3050,
+            "sponsorExtended": 3099,
+            "postGame1": 2996,
+            "postGame2": 2981,
+            "postGame3": 2982
+        },
+        "prizeFanfare": 2956
+    },
+    "sound": {
+        "shortie": {
+            "askCutoff": 3084,
+            "prizeHint": [
+                2964,
+                2965,
+                2966,
+                2967,
+                2968
+            ]
+        },
+        "disOrDat": {
+            "scoreAppear": 3100,
+            "awardPoints": 3051,
+            "bonus": 2979
+        },
+        "roundBreak": {
+            "twoSlam": 2960
+        },
+        "jackAttack": {
+            "transition": 2974,
+            "answer": [
+                3085,
+                3086,
+                3087,
+                3088,
+                3089,
+                3090,
+                3091,
+                3092,
+                3093,
+                3094
+            ],
+            "timeout": 3108
+        },
+        "scoreReveal": {
+            "endLoop": 2935,
+            "crescendo": 3101
+        },
+        "chicken": {
+            "prize": 2961
+        }
+    },
+    "voice": {}
+}
