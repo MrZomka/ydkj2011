@@ -2,3 +2,7 @@ contentExtractor
 .vscode
 segueLogic.txt
 talkshowRef.html
+webpack.config.js
+package*.json
+script
+node_modules
