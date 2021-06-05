@@ -8,6 +8,7 @@ const YDKJGame = class {
 
         this.videoManager = new VideoManager();
         this.audioManager = new AudioManager();
+        //this.animationManager = new AnimationManager();
         this.talkshowManager = new TalkshowManager(this.audioManager);
 
         /* this.videoManager.CreateVideo({
@@ -17,10 +18,11 @@ const YDKJGame = class {
         }); */
 
         //new YDKJQuestion("2670");
-        //new YDKJEpisode("606");
-        //new YDKJEpisode("535");
-        //new YDKJEpisode("534");
-        new YDKJEpisode("605");
+        this.episode = new YDKJEpisode("606");
+        //this.episode = new YDKJEpisode("535");
+        //this.episode = new YDKJEpisode("534");
+        //this.episode = new YDKJEpisode("605");
+        this.openingState = new OpeningState();
     }
 
     resize() {

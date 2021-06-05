@@ -51,6 +51,7 @@ body {
     width: 1280px;
     height: 720px;
     background-color: #fff5;
+    overflow: hidden;
 }
 
 .video-wrapper {
@@ -68,6 +69,40 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+.opening-egg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 700px;
+}
+
+.opening-egg-sponsor {
+    width: 100%;
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
+
+.opening-egg-back-1, .opening-egg-back-2 {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.opening-egg-back-1 {
+    background-image: url(../../image/egg.svg);
+}
+
+.opening-egg-back-2 {
+    background-image: url(../../image/eggLogo.svg);
+    opacity: 0;
 }
 
 .prize-image {

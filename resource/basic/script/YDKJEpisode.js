@@ -5,13 +5,8 @@ const YDKJEpisode = class extends TalkshowContent {
 
     LoadResources() {
         super.LoadResources();
-        $.get(`${this.GetContentPath()}/${this.GetField("gLogo").id}.svg`).then((d) => {
-            const svg = d.querySelector("svg");
-            $(svg).attr({ width: "500px", height: "500px" });
-            const group = svg.querySelector("g");
-            group.setAttribute("transform", group.getAttribute("transform") + " translate(75,75)");
-        });
-        this.LoadPrize();
+        this.sponsorLogo = $("<img/>").attr("src", `${this.GetContentPath()}/${this.GetField("gLogo").id}.svg`);
+        //this.LoadPrize();
     }
 
     LoadPrize() {
@@ -20,7 +15,7 @@ const YDKJEpisode = class extends TalkshowContent {
             backgroundSize: `100% ${this.data.prizeFrameCount * 100}%`
         });
         Game.wrapper.append(this.prizeImage);
-        this.PlayPrize();
+        //this.PlayPrize();
     }
 
     PlayPrize() {
