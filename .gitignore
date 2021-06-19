@@ -6,3 +6,4 @@ webpack.config.js
 package*.json
 src
 node_modules
+index.js
