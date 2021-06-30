@@ -1,9 +1,12 @@
 contentExtractor
 .vscode
 segueLogic.txt
-talkshowRef.html
+talkshowRef*.html
 webpack.config.js
 package*.json
 src
 node_modules
 index.js
+2015.*
+buttonMaps.txt
+resource/content/question/Test
